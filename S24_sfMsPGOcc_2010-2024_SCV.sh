@@ -2,7 +2,7 @@
 #SBATCH --job-name=S24_sfMsPGOcc_2010-2024_SCV
 #SBATCH --cpus-per-task=10
 #SBATCH --mem=256G
-#SBATCH --time=142:00:00
+#SBATCH --time=130:00:00
 #SBATCH --qos=normal
 #SBATCH --partition=general
 #SBATCH --account=a_reside

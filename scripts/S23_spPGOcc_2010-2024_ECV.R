@@ -6,7 +6,7 @@
 # ===========================================================================
 # CONFIGURATION SECTION - MODIFY THIS PARAMETER AS NEEDED
 # ===========================================================================
-K_FOLDS <- 2  # <-- CHANGE THIS VALUE TO SET NUMBER OF FOLDS (2, 3, 5, 10, etc.)
+K_FOLDS <- 10  # <-- CHANGE THIS VALUE TO SET NUMBER OF FOLDS (2, 3, 5, 10, etc.)
 CV_TYPE <- "ECV"  # Environmental Clustering Cross-Validation
 # ===========================================================================
 
@@ -466,7 +466,7 @@ tryCatch({
   accept.rate <- 0.43
   
   # Set CV threads based on number of folds
-  cv.threads <- min(K_FOLDS, 8)  # Use up to 8 threads or number of folds, whichever is smaller
+  cv.threads <- min(K_FOLDS, 10)  # Use up to 8 threads or number of folds, whichever is smaller
   
   cat("\nCross-validation configuration:\n")
   cat("  - K-fold cross-validation:", K_FOLDS, "folds\n")
